@@ -66,7 +66,7 @@ closeAllConnections()
 # https://www.census.gov/data/tables/2015/econ/susb/2015-susb-annual.html
 # https://www2.census.gov/programs-surveys/susb/tables/2015/msa_naicssector_2015.xlsx
 msaNAICS <- data.table(
-  read_excel("~/zters-app/Data/msa_naicssector_2015.xlsx", skip = 4))
+  read_excel("~/benchmarking-app/Data/msa_naicssector_2015.xlsx", skip = 4))
 msaNAICS <- msaNAICS[-c(1,2) ]
 
 # Aggregate table by fips code
